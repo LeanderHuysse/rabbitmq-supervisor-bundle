@@ -40,6 +40,16 @@ public function registerBundles()
 }
 ```
 
+When using Symfony 4 or higher, add the bundle to config/bundles.php.
+```php
+// config/bundles.php
+
+return [
+    // Your other bundles
+    Phobetor\RabbitMqSupervisorBundle\RabbitMqSupervisorBundle::class => ['all' => true],
+];
+```
+
 ## Zero Configuration
 
 RabbitMQ supervisor bundle works out of the box with a predefined configuration. If you leave it this way you will end
